@@ -1,0 +1,33 @@
+/* COMMON RULES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-aside: #000;
+    --text-aside-primary: #717171;
+    --text-aside-secondary: #a3a3a3;
+    --bg-head-main:#080B12;
+    --bg-main:#141922;
+    --text-main:#7B7D82;
+    --border-success:#9AE22D;
+    --bg-footer:#282828;
+    --light-time-bar:#5A5A5A;
+    --dark-time-bar:#848484;
+    --text-footer:#C1C1C1;
+    --white:#fff;
+}
+
+/* UTILITY */
+
+/********** ASIDE ***********/
+
+
+
+/************ MAIN ***********/
+
+
+
+/************ FOOTER **********/
