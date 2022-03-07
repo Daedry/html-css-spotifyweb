@@ -69,6 +69,10 @@ a {
   width: 100%;
 }
 
+.ml-1{
+    margin-left: 1rem;
+}
+
 /* .fw-500{
     font-weight: 500;
 } */
@@ -191,7 +195,7 @@ a {
   font-weight: 500;
 }
 
-.content {
+.content{
   height: calc(100vh - 150px);
   background-color: var(--bg-main);
   overflow-y: scroll;
@@ -217,25 +221,67 @@ a {
 
 .nav-bar a {
   color: var(--text-main);
-  border-bottom: 1px olid green;
 }
 
-/* card */
+/* content-top */
 
-.card {
-  width: 220px;
-  margin: 2rem 1rem;
+.title>h2{
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.content-top>.card {
+  width: calc(100% / 6 - 1.25rem);
+}
+
+.content-top>.card,
+.content-mid>.card,
+.content-bot>.card{
+    margin: 2rem 1rem 2rem 0;
 }
 
 .img-area {
-  height: 220px;
-  background-color: #9ae22d;
+  height: auto;
 }
 
 .text-area {
   height: 80px;
-  background-color: brown;
 }
+
+.text-area>h5{
+    color: var(--white);
+    text-align: center;
+    margin: 1rem 0 0.7rem 0;
+}
+
+.text-area>p{
+    color: var(--text-main);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* content-mid */
+
+.title>p{
+    color: var(--text-main);
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content-mid>.card,
+.content-bot>.card{
+    width: 192.13px;
+}
+
+/* content-bot */
+
+.content-bot .img-area>img{
+    border-radius: 50%;
+}
+
+
 
 /************ FOOTER **********/
 
