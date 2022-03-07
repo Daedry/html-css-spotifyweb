@@ -20,6 +20,7 @@
   --white: #fff;
   --player-left: #c1c1c1;
   --player-right: #5a5a5a;
+  --bg-user: #808080;
 }
 
 body {
@@ -89,10 +90,6 @@ a {
   font-weight: 600;
 }
 
-.wrapper a {
-  color: var(--text-aside-primary);
-}
-
 /* actions */
 
 .logo {
@@ -103,18 +100,42 @@ a {
   margin: 1.5rem 0 1rem;
 }
 
-.wrapper .selected {
+.active-l {
+  width: 2px;
+  height: 26px;
+  position: absolute;
+  left: 0;
+  top: 88px;
+  border-radius: 02px;
+  background-color: var(--border-as-left);
+}
+
+.actions img {
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.wrapper .home {
   color: var(--white);
+}
+
+.wrapper a {
+  color: var(--text-aside-primary);
+  vertical-align: super;
 }
 
 .actions input {
   background-color: transparent;
   border: none;
   padding-left: 0.25rem;
+  vertical-align: super;
   font-size: 13px;
 }
+.super {
+  vertical-align: super;
+}
 
-.actions i {
+.actions {
   padding-right: 0.25rem;
   font-size: 20px;
 }
@@ -157,20 +178,33 @@ a {
 }
 
 .install {
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.3rem;
   font-size: 10px;
 }
 
-.install > i {
+.install span{
+    vertical-align: super;
+}
+
+.install > img {
   padding-right: 0.35rem;
+  width: 20px;
 }
 
 .user {
-  padding: 1rem 0 0.7rem;
+  padding: 0.75rem 0 0.7rem;
   border-top: 1px solid var(--text-aside-primary);
   font-weight: bold;
   color: var(--white);
   font-size: 12px;
+}
+
+.user > img {
+  width: 18px;
+  background-color: var(--bg-user);
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 0.3rem;
 }
 
 /************ MAIN ***********/
@@ -184,7 +218,8 @@ a {
   position: absolute;
   top: 13px;
   right: 15px;
-  padding: 0.75rem 2rem;
+  margin-top: 5px;
+  padding: 0.5rem 2rem;
   color: var(--white);
   border: 1.5px solid var(--white);
   border-radius: 26px;
@@ -221,6 +256,15 @@ a {
   color: var(--text-main);
 }
 
+.active-b {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 24px;
+    bottom: 14px;
+    border-radius: 2px;
+    background-color: var(--border-as-left);
+  }
 /* content-top */
 
 .title > h2 {
@@ -369,31 +413,31 @@ a {
 
 /* menu-right */
 
-.menu-right{
-    display: flex;
-
+.menu-right {
+  display: flex;
 }
 
-.menu-right>i{
-    padding: 0.5rem;
-    color: var(--white);
+.menu-right > i {
+  padding: 0.7rem;
+  color: var(--white);
+  font-size: 10px;
 }
 
 .volume-l,
-.volume-r{
-    display: inline-block;
-    height: 3px;
-    border-radius: 10px;
-    margin-top: 0.85rem;
+.volume-r {
+  display: inline-block;
+  height: 3px;
+  border-radius: 10px;
+  margin-top: 0.85rem;
 }
 
-.volume-l{
-    width: 25px;
+.volume-l {
+  width: 25px;
   background-color: var(--player-left);
 }
 
-.volume-r{
-    width: 70px;
+.volume-r {
+  width: 70px;
   background-color: var(--player-right);
   margin-right: 1.75rem;
 }

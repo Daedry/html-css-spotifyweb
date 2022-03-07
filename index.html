@@ -19,18 +19,19 @@
 <body>
 
     <aside id="site_aside clearfix">
-        <div class="side-bar col-15 float-l">
+        <div class="side-bar col-15 float-l p-relative">
+            <div class="active-l"></div>
             <div class="wrapper p-relative">
                 <div class="logo">
                     <img src="./img/logo.svg" alt="">
                 </div>
                 <div class="actions">
                     <ul>
-                        <li><a class="selected" href="#"><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
-                        <li><i class="fa fa-search" aria-hidden="true"></i><input type="search" placeholder="Cerca">
-                        </li>
-                        <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> La tua libreria</a></li>
+                        <li><img  src="./img/home.svg" alt=""><a class="home super" href=""> Home </a></li>
+                        <li><img src="./img/search.svg" alt=""><input type="search" placeholder="Cerca"></li>
+                        <li><img src="./img/libreria.svg" alt=""><a class="super" href="#"> La tua libreria</a></li>
                     </ul>
+                   
                 </div>
                 <section class="playlist">
                     <h4>playlist</h4>
@@ -47,11 +48,11 @@
                     </ul>
                     <div class="info ">
                         <div class="install fz-12">
-                            <i class="fa-regular fa-circle-down fa-sm"></i>
+                            <img src="./img/download.svg" alt="">
                             <span> Installa app</span>
                         </div>
                         <div class="user">
-                            <i class="fa-solid fa-circle-user fa-lg "></i>
+                            <img src="./img/profile.svg" alt="">
                             <span>Jhon Doe</span>
                         </div>
 
@@ -69,7 +70,7 @@
         </div>
 
         <div class="content col-85 float-l">
-            <nav class="nav-bar">
+            <nav class="nav-bar p-relative">
                 <ul>
                     <li>
                         <a href="#">
@@ -101,6 +102,7 @@
                             scopri</a>
                     </li>
                 </ul>
+                <div class="active-b"></div>
             </nav>
             <!-- /.nav-bar -->
 
@@ -241,7 +243,7 @@
 
             </div>
             <!-- menu-left -->
-            
+
             <div class="menu-mid">
                 <div class="player">
                     <i class="fas fa-random"></i>
