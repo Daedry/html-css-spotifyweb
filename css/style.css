@@ -34,6 +34,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 /* UTILITY */
@@ -68,7 +69,6 @@ a {
   width: 100%;
 }
 
-
 /* .fw-500{
     font-weight: 500;
 } */
@@ -85,7 +85,6 @@ a {
   margin: 0 1rem;
   color: var(--text-aside-primary);
   font-weight: 600;
-
 }
 
 .wrapper a {
@@ -170,7 +169,6 @@ a {
   font-weight: bold;
   color: var(--white);
   font-size: 12px;
-
 }
 
 /************ MAIN ***********/
@@ -178,6 +176,19 @@ a {
 .header {
   height: 70px;
   background-color: var(--bg-head-main);
+}
+
+.btn {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  padding: 0.75rem 2rem;
+  color: var(--white);
+  border: 1.5px solid var(--white);
+  border-radius: 26px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .content {
@@ -189,10 +200,24 @@ a {
 /* nav-bar */
 
 .nav-bar {
-  width: 60%;
+  width: 50%;
   height: 50px;
   margin: auto;
-  background-color: #848484;
+}
+
+.nav-bar ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-bar a {
+  color: var(--text-main);
+  border-bottom: 1px olid green;
 }
 
 /* card */
