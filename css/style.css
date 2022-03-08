@@ -87,7 +87,7 @@ a {
 }
 
 .wrapper {
-  height: 100%;
+  height: calc(100vh - 80px);
   margin: 0 1rem;
   color: var(--text-aside-primary);
   font-weight: 600;
@@ -139,7 +139,7 @@ a {
   height: 26px;
   position: absolute;
   left: 0;
-  top: 88px;
+  top: 77px;
   border-radius: 02px;
   background-color: var(--border-as-left);
 }
@@ -202,6 +202,29 @@ a {
   margin-left: 2rem;
   vertical-align: middle;
   margin-bottom: 1.8rem;
+}
+
+.playlist-scroll{
+  height: 210px;
+  overflow-y: auto;
+  transition: 1s;
+}
+
+.playlist-scroll::-webkit-scrollbar{
+  background-color: var(--bg-footer);
+  visibility: hidden;
+  width: 5px;
+}
+
+.playlist-scroll::-webkit-scrollbar-thumb{
+  background-color: var(--player-left);
+  border-radius: 7px;
+  visibility: hidden;
+}
+
+.playlist-scroll:hover::-webkit-scrollbar,
+.playlist-scroll:hover::-webkit-scrollbar-thumb{
+  visibility: visible;
 }
 
 /* info */
@@ -276,6 +299,19 @@ a {
   height: calc(100vh - 150px);
   background-color: var(--bg-main);
   overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+  width: 10px;
+}
+
+.content::-webkit-scrollbar-thumb{
+  background-color: var(--bg-user);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--border-as-left);
 }
 
 /* nav-bar */
