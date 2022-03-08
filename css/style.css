@@ -57,11 +57,11 @@ a {
 }
 
 .col-15 {
-  width: 15%;
+  width: 220px;
 }
 
 .col-85 {
-  width: 85%;
+  width: calc(100% - 220px);
 }
 
 .col-100 {
@@ -72,6 +72,8 @@ a {
   margin-left: 1rem;
 }
 
+
+
 /* .fw-500{
     font-weight: 500;
 } */
@@ -79,6 +81,7 @@ a {
 /********** ASIDE ***********/
 
 .side-bar {
+  width:250px;
   height: calc(100vh - 80px);
   background-color: var(--bg-aside);
 }
@@ -90,14 +93,45 @@ a {
   font-weight: 600;
 }
 
+.wrapper a:hover,
+.wrapper input:hover,
+.playlist > p:hover,
+.playlist > i:hover,
+.install:hover {
+  color: var(--white);
+  cursor:pointer;
+}
+
+.wrapper a:hover,
+.wrapper input:hover,
+.playlist > p:hover,
+.playlist > i:hover,
+.install:hover {
+  transition: 500ms;
+}
+
 /* actions */
 
 .logo {
   width: 70%;
+  height: 10vh;
 }
 
 .logo > img {
   margin: 1.5rem 0 1rem;
+}
+
+.logo2 {
+  width: 46px;
+  position: absolute;
+  top: 0;
+  left: 0.4px;
+  visibility: hidden;
+}
+
+.logo:hover .logo2 {
+  visibility: visible;
+  transition: 500ms;
 }
 
 .active-l {
@@ -123,6 +157,7 @@ a {
   color: var(--text-aside-primary);
   vertical-align: super;
 }
+
 
 .actions input {
   background-color: transparent;
@@ -160,6 +195,7 @@ a {
   height: 20px;
 }
 
+
 .playlist > p {
   text-align: right;
   display: inline-block;
@@ -182,8 +218,8 @@ a {
   font-size: 10px;
 }
 
-.install span{
-    vertical-align: super;
+.install span {
+  vertical-align: super;
 }
 
 .install > img {
@@ -210,6 +246,7 @@ a {
 /************ MAIN ***********/
 
 .header {
+  width: calc(100% - 250px);
   height: 70px;
   background-color: var(--bg-head-main);
 }
@@ -226,9 +263,16 @@ a {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 500;
+  transition: 400ms;
+}
+
+.btn:hover {
+  font-size: 12px;
+  padding: 0.7rem 2.5rem;
 }
 
 .content {
+  width: calc(100% - 250px);
   height: calc(100vh - 150px);
   background-color: var(--bg-main);
   overflow-y: scroll;
@@ -254,17 +298,22 @@ a {
 
 .nav-bar a {
   color: var(--text-main);
+  transition: 500ms;
+}
+
+.nav-bar a:hover {
+  color: var(--white);
 }
 
 .active-b {
-    width: 30px;
-    height: 2px;
-    position: absolute;
-    left: 24px;
-    bottom: 14px;
-    border-radius: 2px;
-    background-color: var(--border-as-left);
-  }
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  left: 24px;
+  bottom: 14px;
+  border-radius: 2px;
+  background-color: var(--border-as-left);
+}
 /* content-top */
 
 .title > h2 {
@@ -284,6 +333,26 @@ a {
 
 .img-area {
   height: auto;
+}
+
+.play {
+  color: var(--white);
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.img-area:hover img {
+  opacity: 0.45;
+  transition: 500ms;
+}
+
+.img-area:hover .play {
+  opacity: 1;
+  transition: 500ms;
 }
 
 .text-area {
@@ -354,6 +423,12 @@ a {
   color: var(--text-footer);
   font-weight: 700;
   font-size: 10px;
+  transition: 500ms;
+}
+
+.song>p:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .items {
@@ -364,6 +439,11 @@ a {
 
 .items > .fa-heart {
   margin-right: 0.7rem;
+}
+
+.items>.fa-heart:hover,
+.items>.fa-folder:hover{
+  color: var(--white);
 }
 
 /* menu-mid */
@@ -381,10 +461,17 @@ a {
 
 .player > i {
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 .player > .fa-circle-play {
   font-size: 24px;
+  transition: 100ms linear;
+}
+
+.player > .fa-circle-play:hover{
+  font-size: 28px;
+  padding: 0.55rem;
 }
 
 .timing > span {
@@ -398,17 +485,37 @@ a {
   height: 3px;
   border-radius: 10px;
   margin-bottom: 0.2rem;
-  margin-right: -6px;
+  cursor: pointer;
 }
 
 .time {
-  width: 100px;
+  width: 80px;
+  margin-right: -14px;
   background-color: var(--player-left);
+
+}
+
+.time:hover{
+  background-color: var(--border-as-left);
+}
+
+.time:hover+.circle{
+  visibility: visible;
 }
 
 .time-2 {
   width: 200px;
+  margin-left: -4px;
   background-color: var(--player-right);
+}
+
+.circle{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  visibility: hidden;
 }
 
 /* menu-right */
@@ -429,15 +536,35 @@ a {
   height: 3px;
   border-radius: 10px;
   margin-top: 0.85rem;
+  cursor: pointer;
 }
 
 .volume-l {
-  width: 25px;
+  width: 35px;
   background-color: var(--player-left);
+  margin-right: -10px;
 }
 
 .volume-r {
-  width: 70px;
+  width: 60px;
   background-color: var(--player-right);
   margin-right: 1.75rem;
+}
+
+.circle-vol{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-top: 0.65rem;
+  visibility: hidden;
+}
+
+.volume-l:hover{
+  background-color: var(--border-main-bot);
+}
+
+.volume-l:hover+.circle-vol{
+  visibility: visible;
 }
