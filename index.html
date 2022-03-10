@@ -21,20 +21,28 @@
     <aside id="site_aside clearfix">
         <div class="side-bar float-l p-relative">
             <div class="active-l"></div>
-            <div class="wrapper p-relative ">
+            <div class="wrapper p-relative">
+
                 <div class="logo p-relative">
                     <img src="./img/logo.svg" alt="">
-                    <img class="logo2" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="">
+                    <img class="logo-320px"
+                        src="https://uploads-ssl.webflow.com/5e1b671a4b6c0897647bccad/5e1b86834b6c087bb47ce5d5_Spotify_Icon_RGB_White.png"
+                        alt="">
+                    <img class="logo2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="">
                 </div>
-                <div class="actions">
-                    <ul>
-                        <li><img src="./img/home.svg" alt=""><a class="home super" href=""> Home </a></li>
-                        <li><img src="./img/search.svg" alt=""><a href="">Cerca</a> </li>
-                        <li><img src="./img/libreria.svg" alt=""><a class="super" href="#"> La tua libreria</a></li>
-                    </ul>
+                <!-- /.logo -->
 
+                <div class="as-top">
+                    <ul>
+                        <li><img src="./img/home.svg" alt=""><a class="home" href=""> Home </a></li>
+                        <li><img src="./img/search.svg" alt=""><a class="cerca" href="">Cerca</a> </li>
+                        <li><img src="./img/libreria.svg" alt=""><a href="#"> La tua libreria</a></li>
+                    </ul>
                 </div>
-                <section class="playlist">
+                <!-- /.as-top -->
+
+                <section class="as-mid">
                     <h4>playlist</h4>
                     <i class="fa-solid fa-square-plus fa-3x"></i>
                     <p>Crea Playlist</p>
@@ -56,31 +64,39 @@
                             <li><a href="#">Nome playlist</a></li>
                         </ul>
                     </div>
-                    <div class="info ">
-                        <div class="install fz-12">
-                            <img src="./img/download.svg" alt="">
-                            <span> Installa app</span>
-                        </div>
-                        <div class="user">
-                            <img src="./img/profile.svg" alt="">
-                            <span>Jhon Doe</span>
-                        </div>
-
-                    </div>
                 </section>
+                <!-- /.as-mid -->
+
+                <div class="as-bot">
+                    <div class="install">
+                        <img src="./img/download.svg" alt="">
+                        <span> Installa app</span>
+                    </div>
+                    <div class="user">
+                        <img src="./img/profile.svg" alt="">
+                        <span>Jhon Doe</span>
+                    </div>
+                </div>
+                <!-- /.as-bot -->
+
             </div>
+            <!-- /.wrapper -->
 
         </div>
+        <!-- /.side-bar -->
+
     </aside>
-    <!-- /#side_bar -->
+    <!-- /#site_aside -->
 
     <main id="site_main clearfix">
+
         <div class="header float-l p-relative">
             <a class="btn" href="#">Effettua l'upgrade</a>
         </div>
+        <!-- /.header -->
 
         <div class="content float-l">
-            <nav class="nav-bar p-relative">
+            <nav class="nav-bar p-relative ml-1">
                 <ul>
                     <li>
                         <a href="#">
@@ -243,6 +259,8 @@
             <!-- /.content-bot -->
 
         </div>
+        <!-- /.content -->
+
     </main>
     <!-- /#site_main -->
 
@@ -257,11 +275,10 @@
                     <h5>Sinister</h5>
                     <p>Nome Brano</p>
                 </div>
-                <div class="items">
+                <div class="items d-flex">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
-
             </div>
             <!-- menu-left -->
 
@@ -277,25 +294,32 @@
                     <span class="start">0:25</span>
                     <div class="time"></div>
                     <div class="circle"></div>
-                    <span class="time-2"></span>
+                    <div class="time-2"></div>
                     <span class="finish">4:35</span>
                 </div>
             </div>
             <!-- /menu-mid -->
 
             <div class="menu-right d-flex">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="volume-l"></div>
-                <div class="circle-vol"></div>
-                <div class="volume-r"></div>
+                <div class="action d-flex">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="volume d-flex">
+                    <div class="volume-l"></div>
+                    <div class="circle-vol"></div>
+                    <div class="volume-r"></div>
+                </div>
             </div>
+            <!-- /menu-right -->
+
         </div>
-        <!-- /menu-right -->
+        <!-- /.music-status -->
+        
+
     </footer>
     <!-- /#site_footer -->
-
 
 </body>
 
