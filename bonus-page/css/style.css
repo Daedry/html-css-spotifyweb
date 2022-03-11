@@ -141,11 +141,6 @@ a {
   visibility: hidden;
 }
 
-svg.svg {
-  width: 20px;
-  background-color: transparent;
-}
-
 .logo:hover .logo2 {
   visibility: visible;
   transition: 500ms;
@@ -159,6 +154,10 @@ svg.svg {
 .wrapper a {
   color: var(--text-aside-primary);
   vertical-align: super;
+}
+
+.as-top .fa-house{
+ font-size: 17px;
 }
 
 .as-top .cerca {
@@ -276,25 +275,7 @@ svg.svg {
 .container {
   width: calc(100% - 220px);
   height: calc(100vh - 80px);
-  /* overflow-y: scroll; */
 }
-
-/* .container::-webkit-scrollbar {
-  width: 6px;
-}
-
-.container::-webkit-scrollbar-thumb {
-  background-color: var(--bg-footer);
-  border-radius: 7px;
-}
-
-.container:hover::-webkit-scrollbar-thumb {
-  background-color: var(--bg-user);
-}
-
-.container::-webkit-scrollbar-thumb:active {
-  background-color: var(--border-as-left);
-} */
 
 /* header */
 
